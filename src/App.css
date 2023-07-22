@@ -1,50 +1,67 @@
-#root {
+/*#root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+}*/
 .header {
-  background-color: #888;
-  height: 80px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-top: px;
+}
+.header p {
+  text-align: left;
+  font-size: 1.5rem;
+  padding-left: 3px;
+  max-width: 50px;
+}
+.row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
   margin-bottom: 5px;
 }
-.row{
-  width: 100%;
+section {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 80%; /* Adjust the height as needed */
+}
+.main {
+  width: 20%;
+  margin: 50px auto;
+  padding: 1.7rem 0.7rem 0.5rem 0.7rem;
+  height: 280px;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 22px -8px rgba(100, 100, 100, 0.2);
+}
+.row:last-child button:first-child {
+  grid-column: 1/3;
+}
+.row:last-child {
+  margin-bottom: 0;
+}
+.row:last-child button:last-child {
+  grid-column: 4/5;
+  background-color: #1e9f67;
+}
+
+.row button {
+  padding: 5px;
+  background-color: #e5eff2;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all ease 0.4s;
+}
+.row button:hover {
+  background-color: #d0e4eb;
+  cursor: pointer;
+}
+.row button.op {
+  background-color: #f2882a;
 }
