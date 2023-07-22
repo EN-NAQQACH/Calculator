@@ -5,6 +5,7 @@ export default function Header(props){
         <div className="header">
             <p>{props.valueofbtn}</p>
             <p>{props.result}</p>
+            
         </div>
     )
 }
